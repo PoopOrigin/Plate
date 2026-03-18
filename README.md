@@ -1,6 +1,7 @@
 # Plate
 Simple lua/luau table utility module
 
+How to use
 ```lua
 local Plate = require(path.to.Plate)
 ```
@@ -29,6 +30,8 @@ print(table.concat(t, ", ")) --> a, c
 ```lua
 local t = {"apple", "banana", "orange"}
 print(Plate.At(t, 2)) --> banana
+print(Plate.At(t, 4)) --> "Index out of bounds"
+print(Plate.At(t, 1.1)) --> "Index is not an integer"
 ```
 
 ## Count
