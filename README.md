@@ -1,5 +1,5 @@
 # Plate
-Simple lua/luau utility module for tables
+Simple lua/luau table utility module
 
 Usage
 ```lua
