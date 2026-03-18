@@ -1,8 +1,9 @@
 # Plate
-Simple lua/luau table utility module
+Simple lua/luau utility module for tables
 
-How to use
+Usage
 ```lua
+--Require the module
 local Plate = require(path.to.Plate)
 ```
 
@@ -14,6 +15,7 @@ local b = Plate.DeepCopy(a)
 
 b.nested.y = 99
 print(a.nested.y) --> 2
+--If you were to use a shallow copy like table.clone(), it would print 99 here
 ```
 
 ## RemoveByValue
